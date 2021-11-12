@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/all.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css') }}">
+    <title>Me..Guide</title>
+</head>
+
+<header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="#" class="logo" style="margin-top:10px">
+                        <img src={{url_for('static', filename='images/logo.png')}} alt="" class="logo">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#performance">Buy Guide</a></li>
+                        <li><a href="#storage-card-info">HDD vs SSD</a></li>
+                        <li><a href="#display">Display info</a></li>
+                        <li><a href="#os-card-info">OS</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="home" id="home">
+
+    <!-- ***** Header Text Start ***** -->
+    <div class="header-text">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+                    <h1>We provide the best <strong>way to bring </strong><br>Laptop<strong>to your World</strong></h1>
+                    <p>Lap Pred helps you to choose the best laptop that you need </p>
+                    <a href="#features" class="main-button-slider">Discover More</a>
+                    <p class="things" >5 Things you need to know Before Buying a Laptop</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Header Text End ***** -->
+
+
+</div>
+
+<section class="section home-feature">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="features-small-item">
+                
+                            <img class="icon" src={{url_for('static', filename='images/performance.png')}} alt="">
+                            
+                            <h5 class="features-title">Performance</h5>
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="features-small-item">
+                            <img class="icon" src="{{url_for('static', filename='images/OS.png')}}" alt="">
+                            <h5 class="features-title">Operating System</h5>
+                            
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="features-small-item">
+                            <img class="icon" src="{{url_for('static', filename='images/features.png')}}" alt="">
+                            <h5 class="features-title">Features</h5>
+                            
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="features-small-item">
+                            <img class="icon" src={{url_for('static', filename='images/storage.png')}} alt="">
+                            <h5 class="features-title">Storage</h5>
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+                   
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                        <div class="features-small-item">
+                            <img class="icon" src={{url_for('static', filename='images/display.png')}} alt="">
+                            <h5 class="features-title">Display</h5>
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section performance-features" id="performance">
+  <br></br>
+    <h1 class="perfor">PERFORMANCE</h1>
+    <p class="perforp">Performance should be one of your key criterions when looking for a laptop. The key is to match your computing needs with the kind of the power you’re looking for. The performance capability of your laptop depends on the following aspects:</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="performancefeatures-small-item">
+                
+                              <img class="icon" src={{url_for('static', filename='images/processor.png')}} alt="">
+                            
+                            <h5 class="performancefeatures-title">Processor</h5>
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="performancefeatures-small-item">
+                            <img class="icon" src="{{url_for('static', filename='images/ram.png')}}" alt="">
+                            <h5 class="performancefeatures-title">RAM</h5>
+                            
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="performancefeatures-small-item">
+                            <img class="icon" src={{url_for('static', filename='images/sto.png')}} alt="">
+                            <h5 class="performancefeatures-title">Strorage</h5>
+                            
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+                    <!-- ***** Features Small Item Start ***** -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                        <div class="performancefeatures-small-item">
+                            <img class="icon" src={{url_for('static', filename='images/graphics.png')}} alt="">
+                            <h5 class="performancefeatures-title">Graphics</h5>
+                        </div>
+                    </div>
+                    <!-- ***** Features Small Item End ***** -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section padding-top-50 " id="features" style="padding-bottom:0px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center">
+                <img src={{url_for('static', filename='images/intelpro.png')}} class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">PROCESSOR</h2>
+                </div>
+                <div class="left-text">
+                    <p>Selecting the right processor would depend on the kind of applications you wish to run. Here’s a quick reference guide to help you select the right processor</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- ***** Features Big Item End ***** -->
+
+
+<!-- ***** Features Big Item Start ***** -->
+<section class="section " id="fear" style="padding-bottom:0px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">RAM</h2>
+                </div>
+                <div class="left-text">
+                    <p>The amount of RAM decides on how smooth and lag-free an experience you get on your laptop. The higher the amount of RAM the better it is. However, here’s an indication of what you can expect from laptops with varied RAM configurations</p>
+                    <p>displaymum of 4GB RAM for a lag free experience across daily used applications like office apps, browsing, video viewing, etc.</p>
+                    <p>From high resolution video editing to intensive gaming and graphics designing. 16GB of RAM will let you do it all without any stutters.</p>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" >
+                <img src={{url_for('static', filename='images/ramall.png')}} class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section padding-top-50 " id="features" style="padding-bottom:60px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center">
+                <img src={{url_for('static', filename='images/graphall.png')}} class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">Graphics</h2>
+                </div>
+                <div class="left-text">
+                    <p>When looking for gaming laptops, the graphics processor (also referred to as GPU or graphics card), plays the key role. Having the latest series of a dedicated graphics processor ensures the best gaming performance.</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- ***** Features Big Item End ***** -->
+<section class="section " id="fear" style="padding-bottom:60px">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                <div class="left-heading">
+                    <h2 class="section-title">Storage</h2>
+                </div>
+                <div class="left-text">
+                    <p>Selecting the right amount of storage capacity for your laptop depends on storage space requirement and speed of storage. Here’s a quick guide on the various storage capacities and how much content they can store.</p>
+            
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" >
+                <img src={{url_for('static', filename='images/ssd.png')}} class="rounded img-fluid d-block mx-auto" alt="App">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="section colored" id="storage-card-info">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="perfor">STORAGE TYPE</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>WHO SHOULD CONSIDER SSDs?</p>
+<p>SSD-storage-based laptops offer low storage capacity, but they offer 5x the performance benefits in comparison to standard HDD based storage. Consider SSDs when:
+
+Working with large files (>1GB)
+Want a laptop that boots up quickly
+Don't need a lot of storage space
+Looking for a pure performance laptop</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- ***** card Item Start ***** -->
+           <div class="col-lg-6 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                <div class="card-item active">
+                    <div class="card-header">
+                        <h3 class="card-title">HDD</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-wrapper">
+                            <img src="{{url_for('static', filename='images/HDD.png')}}" class="icon" alt="">
+                        </div>
+                        <ul class="list">
+                            <li class="active">Stores data on magnetic discs</li>
+                            <li class="active">Available in higher capacity</li>
+                            <li class="active">Moderate in data transfer</li>
+                            <li class="active">More power consumption</li>
+                            <li class="active">Cheaper when it comes to per GB cost</li>
+                
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** card Item End ***** -->
+
+            <!-- ***** card Item Start ***** -->
+            <div class="col-lg-6 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                <div class="card-item active">
+                    <div class="card-header">
+                        <h3 class="card-title">SSD</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-wrapper">
+                            <img src={{url_for('static', filename='images/SSD1.png')}} class="icon" alt="">
+                        </div>
+                        <ul class="list">
+                            <li class="active">Stores data on memory chips</li>
+                            <li class="active">Comparatively available in lower capacities</li>
+                            <li class="active">Faster in terms of data tranfer</li>
+                            <li class="active">Less power consumption</li>
+                            <li class="active">Expensive on per GB cost.</li>
+                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** card Item End ***** -->
+
+            
+        </div>
+    </div>
+</section>
+<!-- *****storage-card info End ***** -->
+ <section class="display" id="display">
+    <div class="display-content">
+        <div class="container">
+            <div class="row">
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="info">
+                        <h1>DISPLAY</h1>
+                        <p>When it comes to laptop displays, the display size and resolution are the key factors that one needs to consider.
+Higher resolution allows you to fit more content on the screen while making content (text and images) sharper and more pleasant to the eye.</p>
+                      
+                    </div>
+                     <div class="pic"><img src={{url_for('static', filename='images/displayhd.png')}} style="object-fit: contain;width: 400px;height: 400px;border-radius:30px" alt="" ></div>
+                </div>
+            </div>
+            
+            <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <a href="#" class="display-box">
+                        <strong>HD RESOLUTION</strong>
+                        <ul >
+                            <li ><span>Offers 1280 x 720 pixels</span></li>
+                            <li ><span>Found in entry-level laptops</span></li>
+                            <li ><span>Good for basic tasks</span></li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <a href="#" class="display-box">
+                        <strong>FULL HD RESOLUTION</strong>
+                        <ul >
+                            <li ><span>Offers 1920 x 1080 pixels</span></li>
+                            <li ><span>Found in premium and gaming laptops</span></li>
+                            <li ><span>Good for entertainment and productivity apps</span></li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <a href="#" class="display-box">
+                        <strong>4K RESOLUTION</strong>
+                        <ul >
+                            <li ><span>Offers 3840 x 2160 pixels</span></li>
+                            <li ><span>Found in high-end laptops</span></li>
+                            <li ><span>Consider it if you watch a lot of 4K content</span></li>
+                        </ul>
+                    </a>
+                 </div>
+            </div>
+            </div>
+
+             <div class="row">
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="info">
+                        <h1>Display Size</h1>
+                        <p>Finding the sweet spot which offers the desired level of portability while offering an adequate amount of screen real estate is the key to deterdisplayng the screen size.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <a href="#" class="display-box">
+                        <img src={{url_for('static', filename='images/inch13.png')}} class="icon" alt="">
+                        <strong>13.3-INCHES OR LOWER</strong>
+                        <span> lightweighted laptop,Primarily used for office applications</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <a href="#" class="display-box">
+                        <img src={{url_for('static', filename='images/inch14.png')}} class="icon" alt="">
+                        <strong>14-INCHES</strong>
+                        <span>Mixed usage of office applications as well as entertainment, Optimal performance and storage space</span>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                    <a href="#" class="display-box">
+                        <img src={{url_for('static', filename='images/inch15.png')}} class="icon" alt="">
+                        <strong>15.6-INCHs</strong>
+                        <span>Entertainment-oriented Laptop,More USB ports and an optical drive</span>
+                    </a>
+                 </div>
+            </div>
+            </div>
+
+            <!-- ***** display Box End ***** -->
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="section colored" id="os-card-info">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="perfor">OPERATING SYSTEM</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>An operating system manages the hardware and software resources of a computer, while also providing common services that are essential to all software on the system</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- ***** card Item Start ***** -->
+           <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                <div class="card-item active">
+                    <div class="card-header">
+                        <h3 class="card-title">Windows OS</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-wrapper">
+                            <img src={{url_for('static', filename='images/OS.png')}} class="icon" alt="">
+                        </div>
+                        <ul class="list">
+                            <li class="active">Compatible with most hardware and software</li>
+                            <li class="active">Supports third-party programs</li>
+                            <li class="active">Easy to multitask using multiple windows</li>
+                            <li class="active">Try apps and software before buying the</li>
+                            <li class="active">Share data across all synced, compatible devices</li>
+                            <li class="active">Access systems using virtual desktop</li
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** card Item End ***** -->
+
+            <!-- ***** card Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                <div class="card-item active">
+                    <div class="card-header">
+                        <h3 class="card-title">Mac OS</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-wrapper">
+                            <img src={{url_for('static', filename='images/apple.png')}} class="icon" alt="">
+                        </div>
+                        <ul class="list">
+                            <li class="active">Great user interface</li>
+                            <li class="active">Applications run without lag</li>
+                            <li class="active">UNIX-based code makes the OS more secure</li>
+                            <li class="active">Apps are malware and virus-free</li>
+                            <li class="active">limited choice of apps</li>
+                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** card Item End ***** -->
+
+            <!-- ***** card Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                <div class="card-item active">
+                    <div class="card-header">
+                        <h3 class="card-title">Chrome OS</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-wrapper">
+                            <img src={{url_for('static', filename='images/chrome.png')}} class="icon" alt="">
+                        </div>
+                        <ul class="list">
+                            <li class="active">Available only on Chromebooks</li>
+                            <li class="active">Web-based</li>
+                            <li class="active">Mostly free applications</li>
+                            <li class="active">Google’s built-in malware and virus protection</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** card Item End ***** -->
+        </div>
+    </div>
+</section>
+<!-- *****os-card info End ***** -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section" id="laptop">
+    <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title" >LAPTOPS</h2>
+                </div>
+            </div>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                   <br/>
+                    <p>Here are the few laptops that you might want to buy...</p>
+                   <br/>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="laptop-post-thumb">
+                    <div class="img">
+                        <img src={{url_for('static', filename='images/hp.jpg')}} alt="">
+                    </div>
+                    <div class="laptop-content">
+                        <h3>
+                            <a  href="https://www.hp.com/in-en/shop/hp-laptop-15s-fr2006tu-34w78pa.html" target = "_blank">HP Laptop 15s-fr2006TU</a>
+                        </h3>
+                        <div class="text">
+                           11th Generation Intel® Core™ i3 processor
+                              Windows 10 Home 64....
+                        </div>
+                        <a href="https://www.hp.com/in-en/shop/hp-laptop-15s-fr2006tu-34w78pa.html" target = "_blank" class="main-button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="laptop-post-thumb">
+                    <div class="img">
+                        <img src={{url_for('static', filename='images/Dell.jpg')}} alt="">
+                    </div>
+                    <div class="laptop-content">
+                        <h3>
+                            <a target = "_blank" href="https://www.dell.com/en-in/shop/laptops-2-in-1-pcs/inspiron-15-laptop/spd/inspiron-15-5510-laptop/icc-c783501win8">DEll Inspiron 15 Laptop</a>
+                        </h3>
+                        <div class="text">
+                           11th Generation Intel® Core™ i3-1125G4 Processor (8MB Cache, up to 3.7GHz)
+
+                           laptop
+                          Windows 11 Home, English.....
+                        </div>
+                        <a target = "_blank" href="https://www.dell.com/en-in/shop/laptops-2-in-1-pcs/inspiron-15-laptop/spd/inspiron-15-5510-laptop/icc-c783501win8" class="main-button">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="laptop-post-thumb">
+                    <div class="img">
+                        <img src={{url_for('static', filename='images/lenova.png')}} alt="">
+                    </div>
+                    <div class="laptop-content">
+                        <h3>
+                            <a target = "_blank" href="https://www.amazon.in/ASUS-i5-1135G7-15-6-Inch-Integrated-X513EA-BQ502TS/dp/B08S4WR37V">ASUS VivoBook Ultra 15 (2020)</a>
+                        </h3>
+                        <div class="text">
+                           Intel Core i5-1135G7 11th Gen, 15.6-Inch FHD Thin....
+                        </div>
+                        <a target = "_blank" href="https://www.amazon.in/ASUS-i5-1135G7-15-6-Inch-Integrated-X513EA-BQ502TS/dp/B08S4WR37V" class="main-button">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Blog End ***** -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="contact-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="copyright">You can contact us by mailing on <a class="a1" href="mailto:meguide@gmail.com">meguide@gmail.com</a><br>Copyright &copy;Me..Guide made by sarthak,shrey,jimit,bharath kumar</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<body>
+    <button type="button" class="btn open-button" onclick="openForm()"><img src={{url_for('static', filename='images/chatbot.png')}} alt=""></button>
+
+    
+    <div class="chat-popup" id="myForm">
+        <form class="form-container" id="search-form">
+            <div id="chatwin">
+                
+            </div>
+            <button type="button" id="speakbutton"><i class="fas fa-volume-mute"></i></button>
+            <input class="popInput" id="inp" placeholder="Ask Something !!"></input>
+            <button type="button" id="closeBtn" class="btn-close" onclick="closeForm()" aria-label="Close"></button>
+            <button type="button" id="sendButton" class="btn btn-primary sendBtn">Send</button>
+        </form>
+    </div>
+    <script src="/static/js/jquery.min.js" ></script>
+    <script type="text/javascript" src="{{url_for('static',filename='js/speech-to-text.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='js/home.js') }}"></script>
+</body>
+</body>
+</html>

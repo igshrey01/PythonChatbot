@@ -1,0 +1,530 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking. Try asking me, \"What can you do?\" ", "Good to see you again. Try asking me, \"What can you do?\"", "Hi there, how can I help? Try asking me, \"What can you do?\"","Greetings! Welcome! Try asking me, \"What can you do?\""],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Stay safe", "Goodbye! Have a great day ahead", "Bye bye."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure", "Always a pleasure! Do ping me if you need any more help!"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure, I understand", "It seems I didn't get you. Please try again", "I don't understand. Can you try again?"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["What can you do?", "I need help", "What are my options?", "What can you help me with?", "Help"],
+         "responses": ["I can \n1) Guide you to buy a perfect laptop that suits your needs and budget\n2) Predict the price of a laptop with your desired specs\n Ask me something!"],
+         "context": [""]
+        },
+    
+    
+        {"tag": "things_to_consider",
+         "patterns": ["What things shall I consider when buying a laptop?","Things to consider","guide me","how to buy the perfect laptop?"],
+         "responses": ["You need to consider 5 things while buying a laptop.\n1)Performance\n2)Storage\n3)Display\n4)Operating System\n5)Features"]
+        },
+    
+        {"tag": "performance",
+         "patterns": ["What is performance?","performance","How to measure performance?","Performance depends on?","More about performance","More info on performance"],
+         "responses": ["Performance should be one of your key criterions when looking for a laptop. The key is to match your computing needs with the kind of the power you are looking for. The performance capability of your laptop depends on the following aspects:\n1)Processor\n2)RAM\n3)Storage Type\n4)Graphics"]
+         },
+    
+         {"tag": "info_processor",
+         "patterns": ["What is a processor?","How to choose the right processor?","I don't know. Can you give more info?","I don't know","More about processors","More info on processors"],
+         "responses": ["Selecting the right processor would depend on the kind of applications you wish to run. Here is a quick reference guide to help you select the right processor\n1) i3 or Ryzen 3 - For Office Applications, video viewing and chatting and internet browsing.\n2)i5 or Ryzen 5 - For Coding, Gaming and Multi-tasking\n3)i7 or Ryzen 7 - For 3D Graphics, Video Editing and Heavy multi-tasking."],
+         "context_set":"pdetails",
+         "context_filter": "pdetails"
+        },
+        {"tag": "info_ram",
+         "patterns": ["What is RAM?","How to choose RAM?","I don't know. Can you give more info?","I don't know","More about RAM","More info on RAM"],
+         "responses": ["The amount of RAM decides on how smooth and lag-free an experience you get on your laptop. The higher the amount of RAM the better it is. \n1) 4 GB - For Office Applications, video viewing and music apps.\n2)8 GB - For Coding, Gaming and Graphics editing\n3)16 GB - For Heavy gaming and 3D Rendering\n4) 32 GB - Rendering large files and Memory intensive work"],
+         "context_set":"RAM",
+         "context_filter": "RAM"
+        },
+        {"tag": "info_gpu",
+         "patterns": ["Graphics","What are GPU?","How to choose GPU?","I don't know. Can you give more info?","I don't know","More about GPU","More info on GPU"],
+         "responses": ["When looking for gaming laptops, the graphics processor (also referred to as GPU or graphics card), plays the key role. Having the latest series of a dedicated graphics processor ensures the best gaming performance.\n1) 2 GB - Gaming and Image editing\n2)3 GB - Advanced gaming and video editing\n3)4 GB and above - For professional gaming and 3D Rendering"],
+         "context_set":"GPU",
+         "context_filter": "GPU"
+        },
+    
+    
+        {"tag": "info_ssd",
+         "patterns": ["What is SSD?","More about SSD","More info on SSD"],
+         "responses": ["SSD-storage-based laptops offer low storage capacity, but they offer 5x the performance benefits in comparison to standard HDD based storage. Consider SSDs when:\n1) Working with large files\n2)Quick boot\n3)Better performance"],
+         "context_set":"Storage",
+         "context_filter": "Storage"
+        },
+        {"tag": "info_hdd",
+         "patterns": ["What is HDD?","More about HDD","More info on HDD"],
+         "responses": ["HDD stands for Hard Disk Drive. It stores data on magnetic discs and \n1) is moderate in data transfer\n2)Cheaper when it comes to per GB cost compared to SSD"],
+         "context_set":"Storage",
+         "context_filter": "Storage"
+        },
+        {"tag": "info_ssd+hdd",
+         "patterns": ["What is SSD+HDD?","What is HDD+SSD?","More about HDD+SSD","More info on HDD+SSD","More about SSD+HDD","More info on SSD+HDD"],
+         "responses": ["SSD+HDD storage combines the advantages of both SSD and HDD"],
+         "context_set":"Storage",
+         "context_filter": "Storage"
+        },
+        {"tag": "info_storage",
+         "patterns": ["How to choose correct storage type?","I don't know. Can you give more info?","I don't know","More about storage types","More info on storage types","What is storage type?"],
+         "responses": ["SSD-storage-based laptops offer low storage capacity, but they offer 5x the performance benefits in comparison to standard HDD based storage. HDD is cheaper when it comes to per GB cost compared to SSD, SSD+HDD storage combines the advantages of both SSD and HDD"],
+         "context_set":"Storage",
+         "context_filter": "Storage"
+        },
+    
+        {"tag": "info_ss",
+         "patterns": ["How to choose correct storage size?","I don't know. Can you give more info?","I don't know","More about storage sizes","More info on storage sizes","What is storage size?"],
+         "responses": ["Selecting the right amount of storage capacity for your laptop depends on storage space requirement and speed of storage. Hrs of HD Movies that can be stored\n1) 128 GB - 15\n2) 256 GB - 30\n3) 512 GB - 60\n4) 1024 GB - 120\n5) 2048 GB - 240"],
+         "context_set":"SS",
+         "context_filter": "SS"
+        },
+        {"tag": "info_Scr",
+         "patterns": ["How to choose correct screen size?","I don't know. Can you give more info?","I don't know","More about screen sizes","More info on screen sizes"],
+         "responses": ["1) 13.3\" - Lightweight for frequent travellers\n2) 14\" - Perfect balance and performance\n3) 15.6\" - Entertainment-oriented Laptop\n4) 17.3\" - Best for cinematic experience"],
+         "context_set":"Screen",
+         "context_filter": "Screen"
+        },
+        {"tag": "info_type",
+         "patterns": ["How to choose correct laptop type?","I don't know. Can you give more info?","I don't know","More about laptop types","Laptop Types"],
+         "responses": ["1) Notebook - full-sized laptop that strikes a balance between portability and functionality. \n2) Convertible - combine the features of a laptop and a tablet. They're also known as 2-in-1 laptops or hybrids\n3) Business - A business laptop is used solely for business. These laptops are typically made to travel and be used for a longer period of time\n4)Gaming - designed to handle heavy tasks such as gaming that are both CPU and GPU intensive\n5)Ultrabook - strong security and anti-theft protection built in at the hardware level."],
+         "context_set":"lap_type",
+         "context_filter": "lap_type"
+        },
+        {"tag": "info_Processor",
+         "patterns": ["I don't know. Can you give more info?","I don't know","More about Intel","Intel vs AMD"],
+         "responses": ["Intel processor also clocks higher than AMD processors, at the cost of higher power consumption and battery life."],
+         "context_set":"Processor",
+         "context_filter": "Processor"
+        },
+    
+        {"tag": "info_Display",
+         "patterns": ["Display","More about display","More info on display","What is display?"],
+         "responses": ["When it comes to laptop displays, the display size and resolution are the key factors that one needs to consider.Higher resolution allows you to fit more content on the screen while making content (text and images) sharper and more pleasant to the eye."]
+        },
+        {"tag": "info_OS",
+         "patterns": ["OS","Operating System", "More about OS","More info on OS","What is Operating System?"],
+         "responses": ["An operating system manages the hardware and software resources of a computer, while also providing common services that are essential to all software on the system."]
+        },
+        {"tag": "info_features",
+         "patterns": ["Features","Other Features", "What do you mean by features?"],
+         "responses": ["While buying a perfect laptop you can consider features like Touchscreen, Backlit keyboard, USB Type C ports and Fingerprint reader"]
+        },
+    
+        
+        {"tag": "predict_laptop_price",
+         "patterns": ["I wish to buy a laptop", "Can you predict the price of my laptop?","Price prediction", "How costly is the laptop?","predict again","predict price"],
+         "responses": ["Sure. I'll help you out, but first you'll need to answer some simple questions before I could predict the laptop price.\nWhich Company laptop are you looking to buy?\nASUS\nAcer\nApple\nDell\nHP\nLenovo\nMSI\nRazer"],
+         "context_set": "company"
+        },
+        
+    
+    
+        {"tag": "Dell",
+         "patterns": ["Dell","I am looking to buy a Dell laptop"],
+         "responses": ["Alright Dell it is. How much GB of RAM do you require?\n(4/8/16/24/32)"],
+         "context_set":"RAM",
+         "context_filter": "company"
+        },
+        {"tag": "ASUS",
+         "patterns": ["ASUS","I am looking to buy an ASUS laptop"],
+         "responses": ["Alright ASUS it is. How much GB of RAM do you require?\n(4/8/16/24/32)"],
+         "context_set":"RAM",
+         "context_filter": "company"
+        },
+        {"tag": "Acer",
+         "patterns": ["Acer","I am looking to buy an Acer laptop"],
+         "responses": ["Alright Acer it is. How much GB of RAM do you require?\n(4/8/16/24/32)"],
+         "context_set":"RAM",
+         "context_filter": "company"
+        },
+        {"tag": "Apple",
+         "patterns": ["Apple","I am looking to buy an Apple laptop","I am looking to buy a Macbook","Macbook"],
+         "responses": ["Alright Apple it is. How much GB of RAM do you require?\n(4/8/16/24/32)"],
+         "context_set":"RAM",
+         "context_filter": "company"
+        },
+        {"tag": "HP",
+         "patterns": ["HP","I am looking to buy a HP laptop"],
+         "responses": ["Alright HP it is. How much GB of RAM do you require?\n(4/8/16/24/32)"],
+         "context_set":"RAM",
+         "context_filter": "company"
+        },
+        {"tag": "Lenovo",
+         "patterns": ["Lenovo","I am looking to buy a Lenovo laptop"],
+         "responses": ["Alright Lenovo it is. How much GB of RAM do you require?\n(4/8/16/24/32)"],
+         "context_set":"RAM",
+         "context_filter": "company"
+        },
+        {"tag": "MSI",
+         "patterns": ["MSI","I am looking to buy a MSI laptop"],
+         "responses": ["Alright MSI it is. How much GB of RAM do you require?\n(4/8/16/24/32)"],
+         "context_set":"RAM",
+         "context_filter": "company"
+        },
+        {"tag": "Razer",
+         "patterns": ["Razer","I am looking to buy a Razer laptop"],
+         "responses": ["Alright Razer it is. How much GB of RAM do you require?\n(4/8/16/24/32)"],
+         "context_set":"RAM",
+         "context_filter": "company"
+        },
+
+        
+        {"tag": "4GB RAM",
+         "patterns": ["4", "4 GB", "4GB","I require 4 GB of RAM"],
+         "responses": ["Sure. What about Storage Type? (SSD/HDD/SSD+HDD)"],
+         "context_set":"Storage",
+         "context_filter": "RAM"
+        },
+        {"tag": "8GB RAM",
+         "patterns": ["8","8 GB","8GB","I require 8 GB of RAM"],
+         "responses": ["Sure. What about Storage Type? (SSD/HDD/SSD+HDD)"],
+         "context_set":"Storage",
+         "context_filter": "RAM"
+        },
+        {"tag": "16GB RAM",
+         "patterns": ["16","16 GB","16GB","I require 16 GB of RAM"],
+         "responses": ["Sure. What about Storage Type? (SSD/HDD/SSD+HDD)"],
+         "context_set":"Storage",
+         "context_filter": "RAM"
+        },
+        {"tag": "24GB RAM",
+         "patterns": ["24","24 GB","24GB","I require 24 GB of RAM"],
+         "responses": ["Sure. What about Storage Type? (SSD/HDD/SSD+HDD)"],
+         "context_set":"Storage",
+         "context_filter": "RAM"
+        },
+        {"tag": "32GB RAM",
+         "patterns": ["32","32 GB","32GB","I require 32 GB of RAM"],
+         "responses": ["Sure. What about Storage Type? (SSD/HDD/SSD+HDD)"],
+         "context_set":"Storage",
+         "context_filter": "RAM"
+        },
+        
+    
+        {"tag":"HDD",
+         "patterns": ["HDD","Hard Disk Drive","I want HDD storage"],
+         "responses": ["Ok. Enter Storage Size in GB you wish to have\n(128/256/512/1024/2048)\n"],
+         "context_set":"SS",
+         "context_filter": "Storage"
+        },
+        {"tag":"SSD",
+         "patterns": ["SSD","Solid State Drive","I want SSD storage"],
+         "responses": ["Ok. Enter Storage Size in GB you wish to have\n(128/256/512/1024/2048)\n"],
+         "context_set":"SS",
+         "context_filter": "Storage"
+        },
+        {"tag":"HDD+SSD",
+         "patterns": ["SSD+HDD","SSD + HDD","SSD +HDD","SSD+ HDD","I want combination of both HDD and SSD storage","HDD+SSD","HDD + SSD","HDD +SSD","HDD+ SSD"],
+         "responses": ["Ok. Enter Storage Size in GB you wish to have. Enter the two sizes seperated by +. For example, if you want 256 GB SSD + 1 TB HDD enter, 256+1024"],
+         "context_set":"SS",
+         "context_filter": "Storage"
+        },
+    
+        
+        {"tag": "128",
+         "patterns": ["128","128 GB","128GB","I want minimum 128 GB of internal storage"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        {"tag": "256",
+         "patterns": ["250", "256","256 GB","256GB","I want minimum 256 GB of internal storage"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        {"tag": "512",
+         "patterns": ["500","512","512 GB","512GB","I want minimum 512 GB of internal storage"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        {"tag": "1024",
+         "patterns": ["1000","1024","1024 GB","1024GB","I want minimum 1024 GB of internal storage","1 TB","I want minimum 1 TB of internal storage"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        {"tag": "2048",
+         "patterns": ["2048","2048 GB","2048GB","I want minimum 2048 GB of internal storage","2 TB","I want minimum 2 TB of internal storage"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        {"tag": "128+1024",
+         "patterns": ["128+1024","128+1024 GB","128 GB +1024 GB","128 GB + 1 TB"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        {"tag": "256+1024",
+         "patterns": ["256+1024","256+1024 GB","256 GB +1024 GB","256 GB + 1 TB"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        {"tag": "512+1024",
+         "patterns": ["512+1024","512+1024 GB","512 GB +1024 GB","512 GB + 1 TB"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        {"tag": "256+2048",
+         "patterns": ["256+2048","256+2048 GB","256 GB +2048 GB","256 GB + 2 TB"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        {"tag": "512+2048",
+         "patterns": ["512+2048","512+2048 GB","512 GB +2048 GB","512 GB + 2 TB"],
+         "responses": ["I understand. What about the processor chip company? (Intel/AMD)"],
+         "context_set":"Processor",
+         "context_filter": "SS"
+        },
+        
+    
+        {"tag": "Intel",
+         "patterns": ["Intel"],
+         "responses": ["Can you be more specific about the processor you are looking for? Tell me about the generation and model.\nSay, 8th Gen i5"],
+         "context_set":"pdetails",
+         "context_filter": "Processor"
+        },
+        {"tag": "AMD",
+         "patterns": ["AMD"],
+         "responses": ["Can you be more specific about the processor you are looking for?\nSay, Ryzen 3"],
+         "context_set":"pdetails",
+         "context_filter": "Processor"
+        },
+    
+        {"tag": "7th Gen i3",
+         "patterns": ["7th Gen i3"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "8th Gen i3",
+         "patterns": ["8th Gen i3"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "10th Gen i3",
+         "patterns": ["10th Gen i3"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "7th Gen i5",
+         "patterns": ["7th Gen i5"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "8th Gen i5",
+         "patterns": ["8th Gen i5"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "9th Gen i5",
+         "patterns": ["9th Gen i5"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "10th Gen i5",
+         "patterns": ["10th Gen i5"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "6th Gen i7",
+         "patterns": ["6th Gen i7"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "7th Gen i7",
+         "patterns": ["7th Gen i7"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "8th Gen i7",
+         "patterns": ["8th Gen i7"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "9th Gen i7",
+         "patterns": ["9th Gen i7"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "10th Gen i7",
+         "patterns": ["10th Gen i7"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "8th Gen i9",
+         "patterns": ["8th Gen i9"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "9th Gen i9",
+         "patterns": ["9th Gen i9"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "Ryzen 3",
+         "patterns": ["Ryzen 3"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "Ryzen 5",
+         "patterns": ["Ryzen 5"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+        {"tag": "Ryzen 7",
+         "patterns": ["Ryzen 7"],
+         "responses": ["Excellent! Now let's talk about the GPU.\nHow much external GPU RAM size in GB should the laptop have?\n(2/3/4/6/8/Not Required)"],
+         "context_set":"GPU",
+         "context_filter": "pdetails"
+        },
+    
+    
+        {"tag": "2GB GPU",
+         "patterns": ["2","2 GB","I require 2 GB GPU card"],
+         "responses": ["Got it! How heavy is the laptop? Enter weight in kilograms.\n(Less than 1 kg/1-2 kg/>2 kg)"],
+         "context_set":"Weight",
+         "context_filter": "GPU"
+        },
+        {"tag": "3GB GPU",
+         "patterns": ["3","3 GB","I require 3 GB GPU card"],
+         "responses": ["Got it! How heavy is the laptop? Enter weight in kilograms.\n(Less than 1 kg/1-2 kg/>2 kg)"],
+         "context_set":"Weight",
+         "context_filter": "GPU"
+        },
+        {"tag": "4GB GPU",
+         "patterns": ["4","4 GB","I require 4 GB GPU card"],
+         "responses": ["Got it! How heavy is the laptop? Enter weight in kilograms.\n(Less than 1 kg/1-2 kg/>2 kg)"],
+         "context_set":"Weight",
+         "context_filter": "GPU"
+        },
+        {"tag": "6GB GPU",
+         "patterns": ["6","6 GB","I require 6 GB GPU card"],
+         "responses": ["Got it! How heavy is the laptop? Enter weight in kilograms.\n(Less than 1 kg/1-2 kg/>2 kg)"],
+         "context_set":"Weight",
+         "context_filter": "GPU"
+        },
+        {"tag": "8GB GPU",
+         "patterns": ["8","8 GB","I require 8 GB GPU card"],
+         "responses": ["Got it! How heavy is the laptop? Enter weight in kilograms.\n(Less than 1 kg/1-2 kg/>2 kg)"],
+         "context_set":"Weight",
+         "context_filter": "GPU"
+        },
+        {"tag": "Integrated",
+         "patterns": ["Integrated", "No external GPU required","I am ok with integrated graphics card", "Don't need","Not required"],
+         "responses": ["Got it! As you don't require external graphics card, I have selected Integrated Graphics card as your choice. How heavy is the laptop? Enter weight in kilograms.\n(Less than 1 kg/1-2 kg/>2 kg)"],
+         "context_set":"Weight",
+         "context_filter": "GPU"
+        },
+        {"tag": "Dedicated",
+         "patterns": ["I don't have a preferance","Anything will do"],
+         "responses": ["Got it! How heavy is the laptop? Enter weight in kilograms.\n(Less than 1 kg/1-2 kg/>2 kg)"],
+         "context_set":"Weight",
+         "context_filter": "GPU"
+        },       
+        
+    
+        {"tag": "Less than 1 kg",
+         "patterns": ["Less than 1 kg","<1kg","1","0.75kg","1kg","Light weight"],
+         "responses": ["Uh huh.. Let's talk about the screen size in inches. What is your desired size in inches? (13.3/14/15.6/17.3)"],
+         "context_set":"Screen",
+         "context_filter": "Weight"
+        }, 
+        {"tag": "1-2 kg",
+         "patterns": ["1-2 kg","1 to 2 kg", "Less than 2 kilos","Normal weight"],
+         "responses": ["Uh huh.. Let's talk about the screen size in inches. What is your desired size in inches? (13.3/14/15.6/17.3)"],
+         "context_set":"Screen",
+         "context_filter": "Weight"
+        },
+        {"tag": ">2 kg",
+         "patterns": ["Weight is not an issue","I am looking for heavier laptops","Heavy weight","Heavy","More than 2 kg","2 kg",">2kg"],
+         "responses": ["Uh huh.. Let's talk about the screen size in inches. What is your desired size in inches? (13.3/14/15.6/17.3)"],
+         "context_set":"Screen",
+         "context_filter": "Weight"
+        },
+        
+    
+        {"tag": "13.3 inches",
+         "patterns": ["13.3 inches","13.3","13.3\""],
+         "responses": ["I see. Can you categorize your laptop?\nNotebook\nConvertible\nBusiness\nGaming\nUltrabook"],
+         "context_set":"lap_type",
+         "context_filter": "Screen"
+        },
+        {"tag": "14 inches",
+         "patterns": ["14 inches","14","14\"","14.0"],
+         "responses": ["I see. Can you categorize your laptop?\nNotebook\nConvertible\nBusiness\nGaming\nUltrabook"],
+         "context_set":"lap_type",
+         "context_filter": "Screen"
+        },
+        {"tag": "15.6 inches",
+         "patterns": ["15.6 inches","15.6","15.6\""],
+         "responses": ["I see. Can you categorize your laptop?\nNotebook\nConvertible\nBusiness\nGaming\nUltrabook"],
+         "context_set":"lap_type",
+         "context_filter": "Screen"
+        },
+        {"tag": "17.3 inches",
+         "patterns": ["17.3 inches","17.3","17.3\""],
+         "responses": ["I see. Can you categorize your laptop?\nNotebook\nConvertible\nBusiness\nGaming\nUltrabook"],
+         "context_set":"lap_type",
+         "context_filter": "Screen"
+        },
+    
+    
+        {"tag": "Notebook",
+         "patterns": ["Notebook","Notebook type","I want a Notebook laptop"],
+         "responses": [""],
+         "context_filter": "lap_type"
+        },
+        {"tag": "Convertible",
+         "patterns": ["Convertible","Convertible type","I want a Convertible laptop"],
+         "responses": [""],
+         "context_filter": "lap_type"
+        },
+        {"tag": "Business",
+         "patterns": ["Business","Business type","I want a Business laptop"],
+         "responses": [""],
+         "context_filter": "lap_type"
+        },
+        
+        {"tag": "Gaming",
+         "patterns": ["Gaming","Gaming type","I want a Gaming laptop"],
+         "responses": [""],
+         "context_filter": "lap_type"
+        },
+        {"tag": "Ultrabook",
+         "patterns": ["Ultrabook","Ultrabook type","I want a Ultrabook"],
+         "responses": [""],
+         "context_filter": "lap_type"
+        }
+    
+   ]
+}
